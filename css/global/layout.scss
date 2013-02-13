@@ -1,0 +1,61 @@
+select, 
+textarea, 
+input {
+  color: #ddd !important;
+}
+
+a:link,
+a:hover,
+a:active,
+a:visited
+{
+    text-decoration:none;
+    white-space: normal;
+    background: none;
+}
+a, button
+{
+    outline: none !important;
+    background: none;
+    
+    @include transition(all .1s linear);
+    
+    &:hover {
+      @include transition(all .1s linear);
+    }
+}
+
+i {
+  font-style: normal;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  background-color: #000000;
+  
+  &.dark {
+    background-color: #000000;
+  }
+  
+  &.light {
+    background-color: #f7f7f7;
+  }
+}
+
+.wrapper {
+ 
+ }
+
+/**** Clearfix ****/
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+// Sticky footer
+
+html, body {
+  height: 100%;
+}

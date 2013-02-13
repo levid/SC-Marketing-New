@@ -1,0 +1,28 @@
+.header-container {
+  width: auto;
+  height: 102px;
+  display: block;
+  @include background($path + 'bg-header.png', repeat-x, top left, transparent);
+
+  .header {
+    margin: 0px auto;
+    width: 980px;
+    height: auto;
+    display: block;
+  }
+
+}
+
+.main-nav-container {
+  width: auto;
+  height: 50px;
+  display: block;
+  @include background($path + 'bg-header-nav.png', repeat-x, top left, transparent);
+
+  .main-nav {
+    margin: 0px auto;
+    width: 980px;
+    height: auto;
+    display: block;
+  }
+}

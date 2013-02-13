@@ -1,0 +1,60 @@
+!!!
+%head
+  %title SocialCrunch.com
+  %meta{:charset => "utf-8"}/
+  %meta{:name => "google", :value => "notranslate"}/
+  %meta{:content => "en", "http-equiv" => "Content-Language"}/
+  %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
+  %meta{:content => "noindex", :name => "robots"}/
+  %meta{:content => "SocialCrunch", :name => "application-name"}/
+  %meta{:content => "IE=Edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
+  %meta{:content => "text/html;charset=UTF-8", "http-equiv" => "content-type"}/
+  %meta{:content => "no", :name => "apple-mobile-web-app-capable"}/
+  /
+    <link href='/assets/kaleo-icon-72x72.png' rel='apple-touch-icon'>
+    <link href='/assets/kaleo-icon-72x72.png' rel='apple-touch-icon' sizes='72x72'>
+    <link href='/assets/kaleo-icon-114x114.png' rel='apple-touch-icon' sizes='114x114'>
+  %link{:href => "favicon.ico", :rel => "shortcut icon"}/
+  %link{:href => "css/screen.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+  %script{:src => "js/main_page.js", :type => "text/javascript"}
+%body
+  .wrapper
+    .header-container
+      .header
+        .logo-container
+          .logo
+            %a{:href => '#'}
+          .slogan
+            Where do you stand?
+        .sharing-links
+          %ul
+            %li
+              %a.facebook{:href => '#'}
+                %i.icon-facebook
+            %li
+              %a.twitter{:href => '#'}
+                %i.icon-twitter
+
+
+    .main-nav-container
+      .main-nav
+        %ul
+          %li
+            %a.active{:href => '#'} Home
+          %li
+            %a{:href => '#'} Mission
+          %li
+            %a{:href => '#'} Services
+          %li
+            %a{:href => '#'} Team
+          %li
+            %a{:href => '#'} FAQ
+          %li
+            %a{:href => '#'} Contact
+          %li
+            %a{:href => '#'} Blog
+
+    .gradient-line
+
+  :javascript
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')

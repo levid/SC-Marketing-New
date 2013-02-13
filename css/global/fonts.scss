@@ -1,0 +1,13 @@
+/* Include Mixins & CSS3 Stuff */
+
+@include font-face($path + '/fonts/DroidSans-webfont.ttf', DroidSansRegular, 400);
+@include font-face($path + '/fonts/DroidSans-Bold-webfont.ttf', DroidSansBold, 400);
+@include font-face($path + '/fonts/Lato-Lig.ttf', LatoLight, 400);
+@include font-face($path + '/fonts/Lato-Reg.ttf', LatoRegular, 400);
+@include font-face($path + '/fonts/Lato-Bol.ttf', LatoBold, 400);
+@include font-face($path + '/fonts/PillGothic600mg-Light.otf', PillGothic600MgLight, 400);
+@include font-face($path + '/fonts/PillGothic600mg-Regular.otf', PillGothic600MgRegular, 400);
+@include font-face($path + '/fonts/PillGothic600mg-Medium.otf', PillGothic600MgMedium, 400);
+@include font-face($path + '/fonts/MyriadPro-Regular.otf', MyriadPro-Regular, 400);
+@include font-face($path + '/fonts/MyriadPro-Semibold.otf', MyriadPro-Semibold, 400);
+@include font-face($path + '/fonts/MyriadPro-Bold.otf', MyriadPro-Bold, 400);

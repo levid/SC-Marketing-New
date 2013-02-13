@@ -1,0 +1,150 @@
+.header-container {
+  width: auto;
+  height: 102px;
+  display: block;
+  @include background($path + 'bg-header.png', repeat-x, top left, transparent);
+
+  .header {
+    margin: 0px auto;
+    width: 980px;
+    height: auto;
+    display: block;
+
+    .logo-container {
+      display: inline-block;
+
+      .logo {
+        margin: 23px 0px 0px 0px;
+        padding: 0px;
+        display: inline-block;
+        width: 214px;
+        height: 48px;
+        vertical-align: top;
+
+        a {
+          margin: 0px;
+          width: inherit;
+          height: inherit;
+          display: inline-block;
+          @include background($path + 'sc-logo.png', no-repeat, top left, transparent);
+        }
+      }
+
+      .slogan {
+        margin: 39px 0px 0px 15px;
+        width: auto;
+        height: auto;
+        display: inline-block;
+        font-family: PillGothic600MgLight;
+        font-style: italic;
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.7);
+        vertical-align: top;
+      }
+    }
+
+    .sharing-links {
+      margin: 25px 0px 0px 0px;
+      float: right;
+      display: inline-block;
+      padding: 5px 14px 5px 14px;
+      border: 1px solid #20262a;
+      @include background-gradient(#000000, #0f1214, #000000);
+      @include border-radius(10px);
+
+      ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+
+        li {
+          margin: 0px;
+          padding: 0px;
+          display: inline-block;
+          vertical-align: top;
+
+          a {
+            margin: 0px;
+            width: 17px;
+            height: 17px;
+            color: #ffffff;
+            padding: 10px;
+            display: inline-block;
+            text-align: center;
+            @include border-radius(50%);
+            @include background-gradient(#515151, #1e1e1e, #515151);
+
+            i {
+              margin: 0px;
+              padding: 0px;
+              font-size: 20px;
+              margin: 0px auto;
+              vertical-align: top;
+              position: relative;
+              top: -3px;
+            }
+
+            &:hover {
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.main-nav-container {
+  width: auto;
+  height: 50px;
+  display: block;
+  @include background($path + 'bg-header-nav.png', repeat-x, top left, transparent);
+
+  .main-nav {
+    margin: 0px auto;
+    width: 980px;
+    height: auto;
+    display: block;
+
+    ul {
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+
+      li + li {
+        margin: 0px 0px 0px 38px;
+      }
+
+      li {
+        margin: 12px 0px 0px 0px;
+        display: inline-block;
+
+        a {
+          color: #acb2b7;
+          font-family: PillGothic600MgRegular;
+          font-size: 17px;
+          text-transform: uppercase;
+
+          &.active {
+            color: #ffffff;
+          }
+
+          &:hover {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Gradient line
+.gradient-line {
+  margin: 0px 0px 0px 0px;
+  width: 100%;
+  height: 2px;
+  display: block;
+  
+  @include background($path + 'sc-line.png', no-repeat, center center, transparent);
+  @include background-size(100% 100%);
+}
