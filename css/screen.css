@@ -1537,16 +1537,18 @@ ul.icons {
       -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='ie-hex-str(black)', endColorstr='ie-hex-str(#0f1214)');" !important;
       filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='ie-hex-str(black)', endColorstr='ie-hex-str(#0f1214)') !important;
       zoom: 1 !important;
-      -webkit-border-radius: 10px;
-      -khtml-border-radius: 10px;
-      -moz-border-radius: 10px;
-      -ms-border-radius: 10px;
-      -o-border-radius: 10px;
-      border-radius: 10px; }
+      -webkit-border-radius: 15px;
+      -khtml-border-radius: 15px;
+      -moz-border-radius: 15px;
+      -ms-border-radius: 15px;
+      -o-border-radius: 15px;
+      border-radius: 15px; }
       .header-container .header .sharing-links ul {
         margin: 0px;
         padding: 0px;
         list-style: none; }
+        .header-container .header .sharing-links ul li + li {
+          margin: 0px 0px 0px 3px; }
         .header-container .header .sharing-links ul li {
           margin: 0px;
           padding: 0px;
@@ -1615,6 +1617,7 @@ ul.icons {
           font-size: 17px;
           text-transform: uppercase; }
           .main-nav-container .main-nav ul li a.active {
+            font-family: PillGothic600MgMedium;
             color: #ffffff; }
           .main-nav-container .main-nav ul li a:hover {
             color: #ffffff; }
