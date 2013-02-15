@@ -19,42 +19,66 @@
   %script{:src => "js/main_page.js", :type => "text/javascript"}
 %body
   .wrapper
-    .header-container
-      .header
-        .logo-container
-          .logo
-            %a{:href => '#'}
-          .slogan
-            Where do you stand?
-        .sharing-links
+    .fixed-container
+      .header-container
+        .header
+          .logo-container
+            .logo
+              %a{:href => '#'}
+            .slogan
+              Where do you stand?
+          .sharing-links
+            %ul
+              %li
+                %a.facebook{:href => '#'}
+                  %i.icon-facebook
+              %li
+                %a.twitter{:href => '#'}
+                  %i.icon-twitter
+
+      .main-nav-container
+        .main-nav
           %ul
             %li
-              %a.facebook{:href => '#'}
-                %i.icon-facebook
+              %a.active{:href => '#'} Home
             %li
-              %a.twitter{:href => '#'}
-                %i.icon-twitter
+              %a{:href => '#'} Mission
+            %li
+              %a{:href => '#'} Services
+            %li
+              %a{:href => '#'} Team
+            %li
+              %a{:href => '#'} FAQ
+            %li
+              %a{:href => '#'} Contact
+            %li
+              %a{:href => '#'} Blog
 
-
-    .main-nav-container
-      .main-nav
-        %ul
-          %li
-            %a.active{:href => '#'} Home
-          %li
-            %a{:href => '#'} Mission
-          %li
-            %a{:href => '#'} Services
-          %li
-            %a{:href => '#'} Team
-          %li
-            %a{:href => '#'} FAQ
-          %li
-            %a{:href => '#'} Contact
-          %li
-            %a{:href => '#'} Blog
-
-    .gradient-line
+      .gradient-line
+    .spacer
+    .section
+      #home
+        .content-container
+          .title
+            SocialCrunch is a consumer web application that is building a Values Graph of people on the Internet. 
+          .sub-title.pad.top20
+            .text
+              We map peoples' behaviors, opinions, and attitudes to help companies of all sizes understand 21st century consumers
+            %a.btn.blue.margin.left10.top10{:href => '#'} Try It!
+          .screenshot
+            %a{:href => '#'}
+              %img{:src => 'images/app-screenshot.png'}
+    .section
+      #mission
+        .content-container
+          .title-container
+            .title.inline-block.bold
+              Mission
+            .sub-title.inline-block.small
+              Human beings are full of data.
+          .divider
+        .overlay.blue
+          .content-container
 
   :javascript
     document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')

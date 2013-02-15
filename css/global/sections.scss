@@ -1,0 +1,99 @@
+.spacer {
+  padding: 152px 0px 0px 0px;
+}
+
+.section {
+  margin: 0px auto;
+  width: auto;
+  height: auto;
+  display: block;
+  text-align: center;
+
+	#home {
+    margin: 0px auto;
+    @include background($path + 'bg-home.jpg', no-repeat, top center, transparent);
+  }
+
+  #mission {
+    margin: 0px auto;
+    @include background($path + 'bg-mission.jpg', no-repeat, top center, #1f80b7);
+  }
+
+  .content-container {
+    margin: 0px auto;
+    padding: 50px 0px 0px 0px;
+    width: 980px;
+  }
+
+  .overlay {
+    &.blue {
+      background-color: rgba(19, 99, 160, 0.5);
+    }
+  }
+
+  .divider {
+    width: 980px;
+    height: 30px;
+    @include background($path + 'title-divider.png', no-repeat, top center, #1f80b7);
+  }
+
+  .title-container {
+    text-align: left;
+  }
+
+  .title {
+    font-family: PillGothic600MgRegular;
+    font-size: 40px;
+    text-align: left;
+    color: #ffffff;
+
+    &.bold {
+      font-size: 50px;
+      font-weight: 600;
+    }
+  }
+
+  .sub-title {
+    width: auto;
+    font-family: PillGothic600MgLight;
+    font-size: 25px;
+    text-align: left;
+    color: #ffffff;
+    line-height: 35px;
+
+    &.small {
+      margin: 25px 0px 0px 20px;
+      font-size: 20px;
+    }
+
+    .text {
+      display: inline-block;
+      width: 70%;
+    }
+  }
+
+  .screenshot {
+    margin: 50px 0px 0px 0px;
+  }
+
+  a {
+    display: inline-block;
+    vertical-align: top;
+
+    &.btn {
+      padding: 10px 30px 5px 30px;
+      width: auto;
+      height: auto;
+      display: inline-block;
+      @include border-radius(50px);
+      color: #ffffff;
+      font-size: 26px;
+      font-family: PillGothic600MgLight;
+      text-shadow: 0px 1px 1px rgba(0,0,0, .5);
+
+      &.blue {
+        @include background-gradient(#3cb4f1, #0067c2, #3cb4f1);
+      }
+    }
+  }
+}
