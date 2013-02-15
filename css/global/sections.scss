@@ -21,8 +21,23 @@
 
   .content-container {
     margin: 0px auto;
-    padding: 50px 0px 0px 0px;
+    padding: 40px 0px 0px 0px;
     width: 980px;
+  }
+
+  .text {
+    text-align: left;
+    font-family: PillGothic600MgRegular;
+    font-size: 18px;
+    line-height: 30px;
+
+    &.light {
+      color: #ffffff;
+    }
+
+    &.dark {
+      color: #000000;
+    }
   }
 
   .overlay {
@@ -34,7 +49,7 @@
   .divider {
     width: 980px;
     height: 30px;
-    @include background($path + 'title-divider.png', no-repeat, top center, #1f80b7);
+    @include background($path + 'title-divider.png', no-repeat, top center, transparent);
   }
 
   .title-container {

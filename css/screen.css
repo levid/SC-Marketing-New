@@ -1755,14 +1755,23 @@ ul.icons {
     background-repeat: no-repeat; }
   .section .content-container {
     margin: 0px auto;
-    padding: 50px 0px 0px 0px;
+    padding: 40px 0px 0px 0px;
     width: 980px; }
+  .section .text {
+    text-align: left;
+    font-family: PillGothic600MgRegular;
+    font-size: 18px;
+    line-height: 30px; }
+    .section .text.light {
+      color: #ffffff; }
+    .section .text.dark {
+      color: #000000; }
   .section .overlay.blue {
     background-color: rgba(19, 99, 160, 0.5); }
   .section .divider {
     width: 980px;
     height: 30px;
-    background-color: #1f80b7;
+    background-color: transparent;
     background-image: url("../images/title-divider.png");
     background-position: top center;
     background-repeat: no-repeat; }
