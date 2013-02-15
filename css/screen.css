@@ -1,4 +1,5 @@
 @import url(vendor/chosen.css);
+@import url(vendor/bootstrap.min.css);
 /* Mixins and Supportive Variables */
 /*
  * HTML5 Boilerplate
@@ -1707,14 +1708,14 @@ ul.icons {
       .main-nav-container .main-nav ul li {
         margin: 12px 0px 0px 0px;
         display: inline-block; }
+        .main-nav-container .main-nav ul li.active a {
+          font-family: PillGothic600MgMedium;
+          color: #ffffff; }
         .main-nav-container .main-nav ul li a {
           color: #acb2b7;
           font-family: PillGothic600MgRegular;
           font-size: 17px;
           text-transform: uppercase; }
-          .main-nav-container .main-nav ul li a.active {
-            font-family: PillGothic600MgMedium;
-            color: #ffffff; }
           .main-nav-container .main-nav ul li a:hover {
             color: #ffffff; }
 
