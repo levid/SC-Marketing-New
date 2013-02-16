@@ -84,13 +84,17 @@
             @include background-gradient(#515151, #1e1e1e, #515151);
 
             i {
+              width: auto;
+              height: auto;
               margin: 0px;
               padding: 0px;
               font-size: 20px;
               margin: 0px auto;
               vertical-align: top;
               position: relative;
-              top: -3px;
+              top: 3px;
+              text-align: center;
+              display: inline-block;
             }
 
             &:hover {
@@ -128,6 +132,10 @@
         margin: 12px 0px 0px 0px;
         display: inline-block;
 
+        &:hover {
+          background: none;
+        }
+
         &.active {
           a {
             font-family: PillGothic600MgMedium;
@@ -142,6 +150,7 @@
           text-transform: uppercase;
 
           &:hover {
+            background: none;
             color: #ffffff;
           }
         }

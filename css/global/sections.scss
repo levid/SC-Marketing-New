@@ -9,6 +9,25 @@
   display: block;
   text-align: center;
 
+  .anchor {
+    display: block;
+    height: 150px;
+    margin: -150px 0px 0px 0px;
+    // &::before {
+    //   display:block; 
+    //   content:""; 
+    //   height: 20px; 
+    //   margin: -20px 0 0; 
+    // }
+
+    // &::after {
+    //   display:block; 
+    //   content:""; 
+    //   height: 20px; 
+    //   padding: 20px 0 0; 
+    // }
+  }
+
 	#home {
     margin: 0px auto;
     @include background($path + 'bg-home.jpg', no-repeat, top center, transparent);
@@ -96,15 +115,17 @@
     vertical-align: top;
 
     &.btn {
-      padding: 10px 30px 5px 30px;
+      padding: 10px 30px 7px 30px;
       width: auto;
       height: auto;
       display: inline-block;
+      border: 0px;
       @include border-radius(50px);
       color: #ffffff;
       font-size: 26px;
       font-family: PillGothic600MgLight;
       text-shadow: 0px 1px 1px rgba(0,0,0, .5);
+      line-height: 35px;
 
       &.blue {
         @include background-gradient(#3cb4f1, #0067c2, #3cb4f1);
