@@ -772,44 +772,44 @@ html, body {
   font-weight: 400; }
 
 @font-face {
-  font-family: 'bariol_lightlight';
-  src: url("../fonts/bariol_light-webfont.eot");
-  src: url("../fonts/bariol_light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bariol_light-webfont.woff") format("woff"), url("../fonts/bariol_light-webfont.ttf") format("truetype"), url("../fonts/bariol_light-webfont.svg#bariol_lightlight") format("svg");
+  font-family: 'BariolLight';
+  src: url("../images/fonts/bariol_light-webfont.eot");
+  src: url("../images/fonts/bariol_light-webfont.eot?#iefix") format("embedded-opentype"), url("../images/fonts/bariol_light-webfont.woff") format("woff"), url("../images/fonts/bariol_light-webfont.ttf") format("truetype"), url("../images/fonts/bariol_light-webfont.svg#BariolLight") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'bariol_regularregular';
-  src: url("../fonts/bariol_regular-webfont.eot");
-  src: url("../fonts/bariol_regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bariol_regular-webfont.woff") format("woff"), url("../fonts/bariol_regular-webfont.ttf") format("truetype"), url("../fonts/bariol_regular-webfont.svg#bariol_regularregular") format("svg");
+  font-family: 'BariolRegular';
+  src: url("../images/fonts/bariol_regular-webfont.eot");
+  src: url("../images/fonts/bariol_regular-webfont.eot?#iefix") format("embedded-opentype"), url("../images/fonts/bariol_regular-webfont.woff") format("woff"), url("../images/fonts/bariol_regular-webfont.ttf") format("truetype"), url("../images/fonts/bariol_regular-webfont.svg#BariolRegular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'geogrotesque_lglight';
-  src: url("../fonts/geogrotesque_light-webfont.eot");
-  src: url("../fonts/geogrotesque_light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/geogrotesque_light-webfont.woff") format("woff"), url("../fonts/geogrotesque_light-webfont.ttf") format("truetype"), url("../fonts/geogrotesque_light-webfont.svg#geogrotesque_lglight") format("svg");
+  font-family: 'GeogrotesqueLight';
+  src: url("../images/fonts/geogrotesque_light-webfont.eot");
+  src: url("../images/fonts/geogrotesque_light-webfont.eot?#iefix") format("embedded-opentype"), url("../images/fonts/geogrotesque_light-webfont.woff") format("woff"), url("../images/fonts/geogrotesque_light-webfont.ttf") format("truetype"), url("../images/fonts/geogrotesque_light-webfont.svg#GeogrotesqueLight") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'geogrotesque_ullgultralight';
-  src: url("../fonts/geogrotesque_ultralight-webfont.eot");
-  src: url("../fonts/geogrotesque_ultralight-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/geogrotesque_ultralight-webfont.woff") format("woff"), url("../fonts/geogrotesque_ultralight-webfont.ttf") format("truetype"), url("../fonts/geogrotesque_ultralight-webfont.svg#geogrotesque_ullgultralight") format("svg");
+  font-family: 'GeogrotesqueUltraLight';
+  src: url("../images/fonts/geogrotesque_ultralight-webfont.eot");
+  src: url("../images/fonts/geogrotesque_ultralight-webfont.eot?#iefix") format("embedded-opentype"), url("../images/fonts/geogrotesque_ultralight-webfont.woff") format("woff"), url("../images/fonts/geogrotesque_ultralight-webfont.ttf") format("truetype"), url("../images/fonts/geogrotesque_ultralight-webfont.svg#GeogrotesqueUltraLight") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'geogrotesque_rgregular';
-  src: url("../fonts/geogrotesque_regular-webfont.eot");
-  src: url("../fonts/geogrotesque_regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/geogrotesque_regular-webfont.woff") format("woff"), url("../fonts/geogrotesque_regular-webfont.ttf") format("truetype"), url("../fonts/geogrotesque_regular-webfont.svg#geogrotesque_rgregular") format("svg");
+  font-family: 'GeogrotesqueRegular';
+  src: url("../images/fonts/geogrotesque_regular-webfont.eot");
+  src: url("../images/fonts/geogrotesque_regular-webfont.eot?#iefix") format("embedded-opentype"), url("../images/fonts/geogrotesque_regular-webfont.woff") format("woff"), url("../images/fonts/geogrotesque_regular-webfont.ttf") format("truetype"), url("../images/fonts/geogrotesque_regular-webfont.svg#GeogrotesqueRegular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'geogrotesque_mdmedium';
-  src: url("../fonts/geogrotesque_medium-webfont.eot");
-  src: url("../fonts/geogrotesque_medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/geogrotesque_medium-webfont.woff") format("woff"), url("../fonts/geogrotesque_medium-webfont.ttf") format("truetype"), url("../fonts/geogrotesque_medium-webfont.svg#geogrotesque_mdmedium") format("svg");
+  font-family: 'GeogrotesqueMedium';
+  src: url("../images/fonts/geogrotesque_medium-webfont.eot");
+  src: url("../images/fonts/geogrotesque_medium-webfont.eot?#iefix") format("embedded-opentype"), url("../images/fonts/geogrotesque_medium-webfont.woff") format("woff"), url("../images/fonts/geogrotesque_medium-webfont.ttf") format("truetype"), url("../images/fonts/geogrotesque_medium-webfont.svg#GeogrotesqueMedium") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -1907,11 +1907,11 @@ ul.icons {
       display: block;
       vertical-align: top; }
     .section .persons h3 {
-      font-family: PillGothic600MgLight;
+      font-family: GeogrotesqueRegular;
       font-size: 22px;
       text-transform: uppercase; }
     .section .persons h4 {
-      font-family: PillGothic600MgLight;
+      font-family: GeogrotesqueRegular;
       font-size: 13px;
       text-transform: uppercase; }
     .section .persons li {
@@ -1982,36 +1982,6 @@ ul.icons {
         background-image: url("../images//arrow-blue.png");
         background-position: top left;
         background-repeat: no-repeat; }
-  .section .persons .red .mask {
-    background-color: transparent;
-    background-image: url("../images//bg-mask-red.png");
-    background-position: top left;
-    background-repeat: no-repeat; }
-  .section .persons .lred .mask {
-    background-color: transparent;
-    background-image: url("../images//bg-mask-lred.png");
-    background-position: top left;
-    background-repeat: no-repeat; }
-  .section .persons .orange .mask {
-    background-color: transparent;
-    background-image: url("../images//bg-mask-orange.png");
-    background-position: top left;
-    background-repeat: no-repeat; }
-  .section .persons .yellow .mask {
-    background-color: transparent;
-    background-image: url("../images//bg-mask-yellow.png");
-    background-position: top left;
-    background-repeat: no-repeat; }
-  .section .persons .green .mask {
-    background-color: transparent;
-    background-image: url("../images//bg-mask-green.png");
-    background-position: top left;
-    background-repeat: no-repeat; }
-  .section .persons .blue .mask {
-    background-color: transparent;
-    background-image: url("../images//bg-mask-blue.png");
-    background-position: top left;
-    background-repeat: no-repeat; }
   .section .content-container {
     margin: 0px auto;
     padding: 40px 0px 0px 0px;
@@ -2050,13 +2020,13 @@ ul.icons {
       font-weight: 600; }
   .section .sub-title {
     width: auto;
-    font-family: PillGothic600MgLight;
+    font-family: GeogrotesqueRegular;
     font-size: 25px;
     text-align: left;
     color: #ffffff;
     line-height: 35px; }
     .section .sub-title.small {
-      margin: 25px 0px 0px 20px;
+      margin: 23px 0px 0px 20px;
       font-size: 20px; }
     .section .sub-title .text {
       display: inline-block;

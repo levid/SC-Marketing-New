@@ -158,13 +158,13 @@
     }
 
     h3 {
-      font-family: PillGothic600MgLight;
+      font-family: GeogrotesqueRegular;
       font-size: 22px;
       text-transform: uppercase;
     }
 
     h4 {
-      font-family: PillGothic600MgLight;
+      font-family: GeogrotesqueRegular;
       font-size: 13px;
       text-transform: uppercase;
     }
@@ -272,30 +272,6 @@
     }
   }
 
-  .persons .red .mask {
-    @include background($path + '/bg-mask-red.png', no-repeat, top left, transparent);
-  }
-
-  .persons .lred .mask {
-    @include background($path + '/bg-mask-lred.png', no-repeat, top left, transparent);
-  }
-
-  .persons .orange .mask {
-    @include background($path + '/bg-mask-orange.png', no-repeat, top left, transparent);
-  }
-
-  .persons .yellow .mask {
-    @include background($path + '/bg-mask-yellow.png', no-repeat, top left, transparent);
-  }
-
-  .persons .green .mask {
-    @include background($path + '/bg-mask-green.png', no-repeat, top left, transparent);
-  }
-
-  .persons .blue .mask {
-    @include background($path + '/bg-mask-blue.png', no-repeat, top left, transparent);
-  }
-
   .content-container {
     margin: 0px auto;
     padding: 40px 0px 0px 0px;
@@ -348,14 +324,14 @@
 
   .sub-title {
     width: auto;
-    font-family: PillGothic600MgLight;
+    font-family: GeogrotesqueRegular;
     font-size: 25px;
     text-align: left;
     color: #ffffff;
     line-height: 35px;
 
     &.small {
-      margin: 25px 0px 0px 20px;
+      margin: 23px 0px 0px 20px;
       font-size: 20px;
     }
 
