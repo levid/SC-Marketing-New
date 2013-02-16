@@ -66,4 +66,8 @@
     }
   });
 
+  $(window).load(function() {
+    return $('.chzn-select').chosen();
+  });
+
 }).call(this);

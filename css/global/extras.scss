@@ -209,3 +209,11 @@
 .float-right {
   float: right;
 }
+
+.spacer {
+  padding: 152px 0px 0px 0px;
+
+  &.small {
+    padding: 16px 0px 0px 0px;
+  }
+}

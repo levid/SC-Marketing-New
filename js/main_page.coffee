@@ -33,8 +33,13 @@ class SocialCrunch
 window.SC = new SocialCrunch()
 
 $(document).ready ->
+  
+
   if ($(window.location).attr('href').indexOf("#") != -1) 
     id = $(window.location).attr('hash')
     $('.main-nav li').find('a').each (index, el) ->
       if $(el).attr('href') == id
         $($(el)[0]).trigger('click')
+
+$(window).load ->
+  $('.chzn-select').chosen()
