@@ -1,5 +1,9 @@
 .spacer {
   padding: 152px 0px 0px 0px;
+
+  &.small {
+    padding: 16px 0px 0px 0px;
+  }
 }
 
 .section {
@@ -105,6 +109,159 @@
         }
       }
     }
+  }
+
+  #team {
+    margin: 0px auto;
+    @include background($path + 'bg-team.jpg', no-repeat, top center, #b7351f);
+
+    .overlay {
+      padding: 150px 0px 0px 0px;
+      background-color: rgba(160, 34, 19, 0.5);
+    }
+
+    .overlay2 {
+      background-color: rgba(133, 21, 11, 0.5);
+    }
+  }
+
+  #faq {
+    margin: 0px auto;
+    @include background($path + 'bg-faq.jpg', no-repeat, top center, #d7d7d7);
+
+    .overlay {
+      background-color: rgba(204, 203, 202, 0.5);
+    }
+  }
+
+  #contact {
+    margin: 0px auto;
+    @include background($path + 'bg-contact.jpg', no-repeat, top center, #a9d36b);
+
+    .overlay {
+      background-color: rgba(148, 198, 83, 0.5);
+    }
+  }
+
+  .persons {
+    margin: -200px 0px 0px 0px;
+    padding: 0 0 1px;
+    list-style: none;
+    overflow: hidden;
+    width: 1043px;
+    color: #ffffff;
+    font: 13px/18px Helvetica, Arial, sans-serif;
+
+    img {
+      display:block;
+      vertical-align:top;
+    }
+
+    h3 {
+      font-family: PillGothic600MgLight;
+      font-size: 22px;
+      text-transform: uppercase;
+    }
+
+    h4 {
+      font-family: PillGothic600MgLight;
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+
+    li {
+      width:282px;
+      display:inline-block;
+      margin:0 63px 0 0;
+      padding:0 0 24px;
+      text-align:center;
+      vertical-align: top;
+    }
+
+    .photo {
+      width: 280px;
+      height: 291px;
+      overflow: hidden;
+      position: relative;
+      margin: 0px;
+      @include border-radius(50%);
+
+      img {
+        overflow: hidden;
+      }
+
+      &.red {
+        border: 8px solid #af1516;
+
+        // &:before {
+        //   content: "";
+        //   position: absolute;
+        //   bottom: 0px;
+        //   left: -19px;
+        //   width: 0;
+        //   height: 0;
+        //   border-style: solid;
+        //   border-width: 0 19px 19px 0;
+        //   border-color: transparent #cdcdcd transparent transparent;
+        // }
+
+        // &:after {
+        //   content: "";
+        //   position: absolute;
+        //   bottom: 1px;
+        //   left: -17px;
+        //   width: 0;
+        //   height: 0;
+        //   border-style: solid;
+        //   border-width: 0 17px 17px 0;
+        //   border-color: transparent #ffffff transparent transparent;
+        // }
+
+      }
+
+      &.lred {
+        border: 8px solid #ee3b22;
+      }
+
+      &.orange {
+        border: 8px solid #ffbc8c;
+      }
+    }
+
+    .arrow {
+      margin: 0px auto;
+      width: 16px;
+      height: 13px;
+      display: block;
+
+      &.red {
+        @include background($path + '/arrow-red.png', no-repeat, top left, transparent);
+      }
+    }
+  }
+
+  .persons .red .mask {
+    @include background($path + '/bg-mask-red.png', no-repeat, top left, transparent);
+  }
+
+  .persons .lred .mask {
+    @include background($path + '/bg-mask-lred.png', no-repeat, top left, transparent);
+  }
+
+  .persons .orange .mask {
+    @include background($path + '/bg-mask-orange.png', no-repeat, top left, transparent);
+  }
+
+  .persons .yellow .mask {
+    @include background($path + '/bg-mask-yellow.png', no-repeat, top left, transparent);
+  }
+
+  .persons .green .mask {
+    @include background($path + '/bg-mask-green.png', no-repeat, top left, transparent);
+  }
+
+  .persons .blue .mask {
+    @include background($path + '/bg-mask-blue.png', no-repeat, top left, transparent);
   }
 
   .content-container {
