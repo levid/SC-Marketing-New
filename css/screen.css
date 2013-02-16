@@ -1931,7 +1931,7 @@ ul.icons {
         float: left;
         width: 442px;
         height: 50px;
-        padding: 15px 13px;
+        padding: 5px 10px 5px 10px;
         margin: 0px;
         color: #000000;
         font-family: BariolRegular;
@@ -1943,7 +1943,12 @@ ul.icons {
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
         border-radius: 10px;
-        background: #ffffff; }
+        outline: none;
+        -webkit-appearance: none;
+        background-color: white;
+        background-image: url("../images/arrow-select.png");
+        background-position: 415px 20px;
+        background-repeat: no-repeat; }
       .section #contact .contact-form input[type="submit"] {
         width: 76px;
         height: 35px;

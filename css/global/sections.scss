@@ -183,14 +183,16 @@
         float:left;
         width: 442px;
         height: 50px;
-        padding: 15px 13px;
+        padding: 5px 10px 5px 10px;
         margin: 0px;
         color: #000000;
         font-family: BariolRegular;
         font-size: 17px;
         border: 1px solid #80a34f;
         @include border-radius(10px);
-        background: #ffffff;
+        outline: none;
+        -webkit-appearance: none;
+        @include background($path + 'arrow-select.png', no-repeat, 415px 20px, #ffffff);
       }
 
       input[type="submit"] {
