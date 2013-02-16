@@ -2,27 +2,55 @@
 (function() {
   var _this = this;
 
-  $('.main-nav').scrollspy({
-    offset: 200
-  });
-
   $('.main-nav').find('a').on('click', function(e) {
-    var id;
+    var id, options;
     e.preventDefault();
     id = $(e.target).attr('href');
-    return _this.scrollTo(id, 150);
+    return _this.scrollTo(id, options = {
+      offset: 150,
+      speed: 500,
+      callback: function() {
+        return $(window.location).attr('hash', id);
+      }
+    });
+  });
+
+  $(window).bind('hashchange', function(e) {
+    var id, options;
+    id = $(window.location).attr('hash');
+    return this.scrollTo(id, options = {
+      offset: 150,
+      speed: 0,
+      callback: function() {}
+    });
   });
 
   $('.main-nav li').on('activate', function(e) {
     var id;
-    id = $(e.target).find('a').attr('href');
-    return _this.scrollTo(id, 150);
+    return id = $(e.target).find('a').attr('href');
   });
 
-  this.scrollTo = function(id, offset) {
-    var yPos;
-    yPos = $(id).position().top - offset;
-    return $(document.body).scrollTo(yPos, 500);
+  this.scrollTo = function(id, options) {
+    var callback, yPos;
+    callback = callback || function() {};
+    yPos = $(id).position().top - options.offset;
+    return $(document.body).scrollTo(yPos, options.speed, {
+      onAfter: function() {
+        return options.callback();
+      }
+    });
   };
+
+  $(document).ready(function() {
+    var id;
+    if ($(window.location).attr('href').indexOf("#") !== -1) {
+      id = $(window.location).attr('hash');
+      return $('.main-nav li').find('a').each(function(index, el) {
+        if ($(el).attr('href') === id) {
+          return $($(el)[0]).trigger('click');
+        }
+      });
+    }
+  });
 
 }).call(this);
