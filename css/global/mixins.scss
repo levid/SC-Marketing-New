@@ -13,11 +13,11 @@ $path           : $base_path + "../images/";
 }
 
 @mixin font-face($fontpath, $font-family: 'Helvetica Neue', $font-weight: 400) {
-    @font-face {
-        font-family: $font-family;
-        src: url($fontpath);
-        font-weight:$font-weight;
-    }
+  @font-face {
+    font-family: $font-family;
+    src: url($fontpath);
+    font-weight:$font-weight;
+  }
 }
 
 @mixin font-size($size, $line-height: 18px) {
