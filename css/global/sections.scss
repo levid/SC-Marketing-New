@@ -226,16 +226,48 @@
       &.orange {
         border: 8px solid #ffbc8c;
       }
+
+      &.yellow {
+        border: 8px solid #ffdd9a;
+      }
+
+      &.green {
+        border: 8px solid #91cfbc;
+      }
+
+      &.blue {
+        border: 8px solid #478d9d;
+      }
     }
 
     .arrow {
-      margin: 0px auto;
+      margin: -1px auto auto 50%;
       width: 16px;
       height: 13px;
       display: block;
 
       &.red {
         @include background($path + '/arrow-red.png', no-repeat, top left, transparent);
+      }
+
+      &.lred {
+        @include background($path + '/arrow-lred.png', no-repeat, top left, transparent);
+      }
+
+      &.orange {
+        @include background($path + '/arrow-orange.png', no-repeat, top left, transparent);
+      }
+
+      &.yellow {
+        @include background($path + '/arrow-yellow.png', no-repeat, top left, transparent);
+      }
+
+      &.green {
+        @include background($path + '/arrow-green.png', no-repeat, top left, transparent);
+      }
+
+      &.blue {
+        @include background($path + '/arrow-blue.png', no-repeat, top left, transparent);
       }
     }
   }

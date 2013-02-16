@@ -771,6 +771,48 @@ html, body {
   src: url("../images//fonts/MyriadPro-Bold.otf");
   font-weight: 400; }
 
+@font-face {
+  font-family: 'bariol_lightlight';
+  src: url("../fonts/bariol_light-webfont.eot");
+  src: url("../fonts/bariol_light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bariol_light-webfont.woff") format("woff"), url("../fonts/bariol_light-webfont.ttf") format("truetype"), url("../fonts/bariol_light-webfont.svg#bariol_lightlight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'bariol_regularregular';
+  src: url("../fonts/bariol_regular-webfont.eot");
+  src: url("../fonts/bariol_regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bariol_regular-webfont.woff") format("woff"), url("../fonts/bariol_regular-webfont.ttf") format("truetype"), url("../fonts/bariol_regular-webfont.svg#bariol_regularregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'geogrotesque_lglight';
+  src: url("../fonts/geogrotesque_light-webfont.eot");
+  src: url("../fonts/geogrotesque_light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/geogrotesque_light-webfont.woff") format("woff"), url("../fonts/geogrotesque_light-webfont.ttf") format("truetype"), url("../fonts/geogrotesque_light-webfont.svg#geogrotesque_lglight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'geogrotesque_ullgultralight';
+  src: url("../fonts/geogrotesque_ultralight-webfont.eot");
+  src: url("../fonts/geogrotesque_ultralight-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/geogrotesque_ultralight-webfont.woff") format("woff"), url("../fonts/geogrotesque_ultralight-webfont.ttf") format("truetype"), url("../fonts/geogrotesque_ultralight-webfont.svg#geogrotesque_ullgultralight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'geogrotesque_rgregular';
+  src: url("../fonts/geogrotesque_regular-webfont.eot");
+  src: url("../fonts/geogrotesque_regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/geogrotesque_regular-webfont.woff") format("woff"), url("../fonts/geogrotesque_regular-webfont.ttf") format("truetype"), url("../fonts/geogrotesque_regular-webfont.svg#geogrotesque_rgregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'geogrotesque_mdmedium';
+  src: url("../fonts/geogrotesque_medium-webfont.eot");
+  src: url("../fonts/geogrotesque_medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/geogrotesque_medium-webfont.woff") format("woff"), url("../fonts/geogrotesque_medium-webfont.ttf") format("truetype"), url("../fonts/geogrotesque_medium-webfont.svg#geogrotesque_mdmedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /*  Font Awesome
     the iconic font designed for use with Twitter Bootstrap
     -------------------------------------------------------
@@ -1899,14 +1941,45 @@ ul.icons {
         border: 8px solid #ee3b22; }
       .section .persons .photo.orange {
         border: 8px solid #ffbc8c; }
+      .section .persons .photo.yellow {
+        border: 8px solid #ffdd9a; }
+      .section .persons .photo.green {
+        border: 8px solid #91cfbc; }
+      .section .persons .photo.blue {
+        border: 8px solid #478d9d; }
     .section .persons .arrow {
-      margin: 0px auto;
+      margin: -1px auto auto 50%;
       width: 16px;
       height: 13px;
       display: block; }
       .section .persons .arrow.red {
         background-color: transparent;
         background-image: url("../images//arrow-red.png");
+        background-position: top left;
+        background-repeat: no-repeat; }
+      .section .persons .arrow.lred {
+        background-color: transparent;
+        background-image: url("../images//arrow-lred.png");
+        background-position: top left;
+        background-repeat: no-repeat; }
+      .section .persons .arrow.orange {
+        background-color: transparent;
+        background-image: url("../images//arrow-orange.png");
+        background-position: top left;
+        background-repeat: no-repeat; }
+      .section .persons .arrow.yellow {
+        background-color: transparent;
+        background-image: url("../images//arrow-yellow.png");
+        background-position: top left;
+        background-repeat: no-repeat; }
+      .section .persons .arrow.green {
+        background-color: transparent;
+        background-image: url("../images//arrow-green.png");
+        background-position: top left;
+        background-repeat: no-repeat; }
+      .section .persons .arrow.blue {
+        background-color: transparent;
+        background-image: url("../images//arrow-blue.png");
         background-position: top left;
         background-repeat: no-repeat; }
   .section .persons .red .mask {
