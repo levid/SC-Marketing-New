@@ -10,6 +10,7 @@
 
     function SocialCrunch(opts) {
       var _this = this;
+      this.initExpander();
       $('.main-nav').find('a').on('click', function(e) {
         var id, options;
         e.preventDefault();
@@ -45,6 +46,20 @@
         onAfter: function() {
           return options.callback();
         }
+      });
+    };
+
+    SocialCrunch.prototype.initExpander = function() {
+      $.expander.defaults.slicePoint = 120;
+      return $(document).ready(function() {
+        $("div.expandable p").expander();
+        return $("div.expandable p").expander({
+          slicePoint: 80,
+          expandPrefix: " ",
+          expandText: "[...]",
+          collapseTimer: 5000,
+          userCollapseText: "[^]"
+        });
       });
     };
 

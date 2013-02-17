@@ -3,6 +3,8 @@ $ = jQuery
 
 class SocialCrunch
   constructor: (opts) ->
+
+    @initExpander()
     $('.main-nav').find('a').on 'click', (e) =>
       e.preventDefault()
       id = $(e.target).attr('href')
@@ -29,6 +31,26 @@ class SocialCrunch
     $(document.body).scrollTo yPos, options.speed,
       onAfter: ->
         options.callback()
+
+  initExpander: () ->
+    # you can override default options globally, so they apply to every .expander() call
+    $.expander.defaults.slicePoint = 120
+    $(document).ready ->
+      
+      # simple example, using all default options unless overridden globally
+      $("div.expandable p").expander()
+      
+      # *** OR ***
+      
+      # override default options (also overrides global overrides)
+      $("div.expandable p").expander
+        slicePoint: 80 # default is 100
+        expandPrefix: " " # default is '... '
+        expandText: "[...]" # default is 'read more'
+        collapseTimer: 5000 # re-collapses after 5 seconds; default is 0, so no re-collapsing
+        userCollapseText: "[^]" # default is 'read less'
+
+
 
 window.SC = new SocialCrunch()
 
