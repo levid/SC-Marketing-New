@@ -10,7 +10,7 @@ class SocialCrunch
       id = $(e.target).attr('href')
       @scrollTo id, options =
         offset: 150
-        speed: 500
+        speed: 800
         callback: ->
           $(window.location).attr('hash', id)
 

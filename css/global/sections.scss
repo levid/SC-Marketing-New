@@ -119,7 +119,7 @@
 
   #faq {
     margin: 0px auto;
-    @include background($path + 'bg-faq.jpg', no-repeat, top center, #d7d7d7);
+    @include background($path + 'bg-faq.png', no-repeat, top center, #d7d7d7);
 
     .overlay {
       background-color: rgba(204, 203, 202, 0.5);
@@ -128,7 +128,7 @@
 
   #contact {
     margin: 0px auto;
-    @include background($path + 'bg-contact.jpg', no-repeat, top center, #a9d36b);
+    @include background($path + 'bg-contact.png', no-repeat, top center, #a9d36b);
 
     .overlay {
       background-color: rgba(148, 198, 83, 0.5);

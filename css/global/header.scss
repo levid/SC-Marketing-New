@@ -84,6 +84,25 @@
             @include border-radius(50%);
             @include background-gradient(#515151, #1e1e1e, #515151);
 
+            &.facebook {
+              @include background-gradient(#677fb0, #44619c, #677fb0);
+
+              &:hover {
+                color: #ffffff;
+                @include background-gradient(#7490c8, #4b6bac, #7490c8);
+              }
+            }
+
+            &.twitter {
+              @include background-gradient(#2c8fb9, #0971a1, #2c8fb9);
+
+              &:hover {
+                color: #ffffff;
+
+                @include background-gradient(#2e9bca, #0a7baf, #2e9bca);
+              }
+            }
+
             i {
               width: auto;
               height: auto;
