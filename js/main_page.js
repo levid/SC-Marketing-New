@@ -52,6 +52,7 @@
     SocialCrunch.prototype.initExpander = function() {
       $.expander.defaults.slicePoint = 120;
       return $(document).ready(function() {
+        $("div.expandable p").expander();
         return $("div.expandable p").expander({
           slicePoint: 80,
           expandPrefix: " ",

@@ -4,7 +4,7 @@ $ = jQuery
 class SocialCrunch
   constructor: (opts) ->
     @initExpander()
-    
+
     $('.main-nav').find('a').on 'click', (e) =>
       e.preventDefault()
       id = $(e.target).attr('href')
@@ -37,6 +37,7 @@ class SocialCrunch
     $.expander.defaults.slicePoint = 120
 
     $(document).ready ->
+      $("div.expandable p").expander()
       $("div.expandable p").expander
         slicePoint: 80 # default is 100
         expandPrefix: " " # default is '... '
