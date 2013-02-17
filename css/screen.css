@@ -2199,6 +2199,8 @@ ul.icons {
     .section .sub-title .text {
       display: inline-block;
       width: 70%;
+      font-size: 21px;
+      line-height: 35px;
       text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4); }
   .section .screenshot {
     margin: 50px 0px 0px 0px; }
