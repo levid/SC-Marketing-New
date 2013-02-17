@@ -17,7 +17,7 @@
         id = $(e.target).attr('href');
         return _this.scrollTo(id, options = {
           offset: 150,
-          speed: 800,
+          speed: 600,
           callback: function() {
             return $(window.location).attr('hash', id);
           }
