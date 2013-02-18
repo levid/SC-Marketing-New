@@ -5,7 +5,7 @@ a:visited
 {
     text-decoration:none;
     white-space: normal;
-    background: none;
+    background: none !important;
 }
 a, button
 {
@@ -50,6 +50,6 @@ body {
 
 // Sticky footer
 
-html, body {
+html {
   height: 100%;
 }

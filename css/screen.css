@@ -666,7 +666,7 @@ a:active,
 a:visited {
   text-decoration: none;
   white-space: normal;
-  background: none; }
+  background: none !important; }
 
 a, button {
   outline: none !important;
@@ -707,7 +707,7 @@ body {
 .clearfix {
   zoom: 1; }
 
-html, body {
+html {
   height: 100%; }
 
 /* Include Mixins & CSS3 Stuff */
