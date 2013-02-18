@@ -666,7 +666,7 @@ a:active,
 a:visited {
   text-decoration: none;
   white-space: normal;
-  background: none !important; }
+  background: none; }
 
 a, button {
   outline: none !important;
@@ -1817,6 +1817,11 @@ ul.icons {
           .main-nav-container .main-nav ul li a:hover {
             background: none;
             color: #ffffff; }
+        .main-nav-container .main-nav ul li a:link,
+        .main-nav-container .main-nav ul li a:hover,
+        .main-nav-container .main-nav ul li a:active,
+        .main-nav-container .main-nav ul li a:visited {
+          background: none; }
 
 .gradient-line {
   margin: 0px 0px 0px 0px;
