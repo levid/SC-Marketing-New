@@ -53,3 +53,119 @@ body {
 html {
   height: 100%;
 }
+
+.section {
+  margin: 0px auto;
+  width: auto;
+  height: auto;
+  display: block;
+  text-align: center;
+  
+  .anchor {
+    display: block;
+    height: 150px;
+    margin: -150px 0px 0px 0px;
+  }
+
+  .content-container {
+    margin: 0px auto;
+    padding: 40px 0px 0px 0px;
+    width: 980px;
+  }
+
+  .text {
+    text-align: left;
+    font-family: PillGothic600MgRegular;
+    font-size: 18px;
+    line-height: 30px;
+
+    &.light {
+      color: #ffffff;
+    }
+
+    &.dark {
+      color: #000000;
+    }
+  }
+
+  .divider {
+    width: 980px;
+    height: 30px;
+    
+    &.light {
+      @include background($path + 'title-divider-light.png', no-repeat, top center, transparent);
+    }
+
+    &.dark {
+      @include background($path + 'title-divider-dark.png', no-repeat, top center, transparent);
+    }
+  }
+
+  .title-container {
+    text-align: left;
+  }
+
+  .title {
+    font-family: PillGothic600MgRegular;
+    font-size: 40px;
+    text-align: left;
+    color: #ffffff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+
+    &.bold {
+      font-size: 50px;
+      font-weight: 600;
+    }
+  }
+
+  .sub-title {
+    width: auto;
+    font-family: GeogrotesqueRegular;
+    font-size: 25px;
+    text-align: left;
+    color: #ffffff;
+    line-height: 35px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+
+    &.small {
+      margin: 23px 0px 0px 20px;
+      font-size: 20px;
+    }
+
+    .text {
+      display: inline-block;
+      width: 70%;
+      font-size: 21px;
+      line-height: 35px;
+      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  .screenshot {
+    margin: 50px 0px 0px 0px;
+  }
+
+  a {
+    display: inline-block;
+    vertical-align: top;
+
+    &.btn {
+      padding: 10px 30px 7px 30px;
+      width: auto;
+      height: auto;
+      display: inline-block;
+      border: 0px;
+      @include border-radius(50px);
+      color: #ffffff;
+      font-size: 26px;
+      font-family: PillGothic600MgLight;
+      text-shadow: 0px 1px 1px rgba(0,0,0, .5);
+      line-height: 35px;
+      box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.4);
+
+      &.blue {
+        @include background-gradient(#3cb4f1, #0067c2, #3cb4f1);
+      }
+    }
+  }
+}

@@ -1,248 +1,93 @@
-.section {
+#home {
   margin: 0px auto;
-  width: auto;
-  height: auto;
-  display: block;
-  text-align: center;
+  @include background($path + 'bg-home.jpg', no-repeat, top center, transparent);
+}
 
-  .anchor {
-    display: block;
-    height: 150px;
-    margin: -150px 0px 0px 0px;
-    // &::before {
-    //   display:block; 
-    //   content:""; 
-    //   height: 20px; 
-    //   margin: -20px 0 0; 
-    // }
+#mission {
+  margin: 0px auto;
+  @include background($path + 'bg-mission.jpg', no-repeat, top center, #1f80b7);
 
-    // &::after {
-    //   display:block; 
-    //   content:""; 
-    //   height: 20px; 
-    //   padding: 20px 0 0; 
-    // }
+  .overlay {
+    background-color: rgba(19, 99, 160, 0.5);
+  }
+}
+
+#services {
+  margin: 0px auto;
+  @include background($path + 'bg-services.jpg', no-repeat, top center, #ffdd9a);
+  
+  .overlay {
+    background-color: rgba(255, 208, 126, 0.5);
   }
 
-	#home {
-    margin: 0px auto;
-    @include background($path + 'bg-home.jpg', no-repeat, top center, transparent);
-  }
+  ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
 
-  #mission {
-    margin: 0px auto;
-    @include background($path + 'bg-mission.jpg', no-repeat, top center, #1f80b7);
+    &.services {
+      li {
+        width: 49.5%;
+        display: inline-block;
+        text-align: left;
+        margin: 0px 0px 40px 0px;
 
-    .overlay {
-      background-color: rgba(19, 99, 160, 0.5);
-    }
-  }
-
-  #services {
-    margin: 0px auto;
-    @include background($path + 'bg-services.jpg', no-repeat, top center, #ffdd9a);
-    
-    .overlay {
-      background-color: rgba(255, 208, 126, 0.5);
-    }
-
-    ul {
-      margin: 0px;
-      padding: 0px;
-      list-style: none;
-
-      &.services {
-        li {
-          width: 49.5%;
+        .circle {
+          width: 132px;
+          height: 132px;
+          background-color: #000000;
           display: inline-block;
-          text-align: left;
-          margin: 0px 0px 40px 0px;
+          @include border-radius(50%);
+          text-align: center;
+          vertical-align: top;
 
-          .circle {
-            width: 132px;
-            height: 132px;
-            background-color: #000000;
+          i {
+            width: auto;
+            height: 78px;
+            font-size: 100px;
+            color: #ffffff;
+            background: none;
             display: inline-block;
-            @include border-radius(50%);
-            text-align: center;
-            vertical-align: top;
+            position: relative;
+            top: 67px;
+          }
+        }
 
-            i {
-              width: auto;
-              height: 78px;
-              font-size: 100px;
-              color: #ffffff;
-              background: none;
-              display: inline-block;
-              position: relative;
-              top: 67px;
-            }
+        .text-container {
+          margin: 0px 0px 0px 10px;
+          width: 300px;
+          display: inline-block;
+          vertical-align: top;
+
+          h4 {
+            padding: 0px;
+            margin: 10px 0px 10px 0px;
+            text-transform: uppercase;
+            font-family: PillGothic600MgMedium;
+            font-size: 20px;
           }
 
-          .text-container {
-            margin: 0px 0px 0px 10px;
-            width: 300px;
-            display: inline-block;
-            vertical-align: top;
-
-            h4 {
-              padding: 0px;
-              margin: 10px 0px 10px 0px;
-              text-transform: uppercase;
-              font-family: PillGothic600MgMedium;
-              font-size: 20px;
-            }
-
-            .text {
-              font-size: 17px;
-              line-height: 24px;
-            }
+          .text {
+            font-size: 17px;
+            line-height: 24px;
           }
         }
       }
     }
   }
+}
 
-  #team {
-    margin: 0px auto;
-    @include background($path + 'bg-team.jpg', no-repeat, top center, #b7351f);
+#team {
+  margin: 0px auto;
+  @include background($path + 'bg-team.jpg', no-repeat, top center, #b7351f);
 
-    .overlay {
-      padding: 150px 0px 0px 0px;
-      background-color: rgba(160, 34, 19, 0.5);
-    }
-
-    .overlay2 {
-      background-color: rgba(133, 21, 11, 0.5);
-    }
+  .overlay {
+    padding: 150px 0px 0px 0px;
+    background-color: rgba(160, 34, 19, 0.5);
   }
 
-  #faq {
-    margin: 0px auto;
-    @include background($path + 'bg-faq.png', no-repeat, top center, #d7d7d7);
-
-    .overlay {
-      background-color: rgba(204, 203, 202, 0.5);
-    }
-  }
-
-  #contact {
-    margin: 0px auto;
-    @include background($path + 'bg-contact.png', no-repeat, top center, #a9d36b);
-
-    .overlay {
-      background-color: rgba(148, 198, 83, 0.5);
-    }
-
-    .contact-form {
-      width: auto;
-      padding:0 0 34px;
-      text-align: left;
-
-      .wrap {
-        width: 1020px;
-      }
-
-      .col {
-        float:left;
-        width:468px;
-        margin:0 42px 0 0;
-      }
-
-      .row {
-        margin: 0px;
-        padding:0 0 8px;
-      }
-
-      label {
-        color: #ffffff;
-        text-transform:uppercase;
-        font-size: 20px;
-        font-family: GeogrotesqueRegular;
-      }
-
-      .form-text {
-        width: 468px;
-        height: 50px;
-        margin: 0 0 30px;
-      }
-
-      input[type="text"] {
-        float:left;
-        width: 442px;
-        padding: 15px 13px;
-        margin: 0px;
-        color: #000000;
-        font-family: BariolRegular;
-        font-size: 17px;
-        border: 1px solid #80a34f;
-        @include border-radius(10px);
-      }
-
-      select {
-        float:left;
-        width: 442px;
-        height: 50px;
-        padding: 5px 10px 5px 10px;
-        margin: 0px;
-        color: #000000;
-        font-family: BariolRegular;
-        font-size: 17px;
-        border: 1px solid #80a34f;
-        @include border-radius(10px);
-        outline: none;
-        -webkit-appearance: none;
-        @include background($path + 'arrow-select.png', no-repeat, 415px 20px, #ffffff);
-      }
-
-      input[type="submit"] {
-        width: 76px;
-        height: 35px;
-        margin: 0 0 0 3px;
-        padding: 0 0 1px;
-        border:0;
-        color: #fff;
-        font-family: BariolRegular;
-        font-size: 17px;
-        text-transform: uppercase;
-        @include background-gradient(#515151, #000000, #515151);
-        @include border-radius(50px);
-
-        &:hover {
-          cursor:pointer;
-        }
-      }
-    }
-
-    .message-field {
-      width:977px;
-      margin:0 auto 16px;
-      padding:0;
-      height:200px;
-      overflow:hidden;
-
-      textarea {
-        float:left;
-        margin:0;
-        width:949px !important;
-        height:176px !important;
-        min-height:176px !important;
-        padding:12px 14px;
-        overflow:auto;
-        color: #000000;
-        font-family: BariolRegular;
-        font-size: 17px;
-        border: 1px solid #80a34f;
-        @include border-radius(10px);
-      }
-    }
-
-    .thanks {
-      color: #ffffff;
-      font-family: PillGothic600MgMedium;
-      font-size: 20px;
-      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
-    }
+  .overlay2 {
+    background-color: rgba(133, 21, 11, 0.5);
   }
 
   .persons {
@@ -311,31 +156,6 @@
 
       &.red {
         border: 8px solid #af1516;
-
-        // &:before {
-        //   content: "";
-        //   position: absolute;
-        //   bottom: 0px;
-        //   left: -19px;
-        //   width: 0;
-        //   height: 0;
-        //   border-style: solid;
-        //   border-width: 0 19px 19px 0;
-        //   border-color: transparent #cdcdcd transparent transparent;
-        // }
-
-        // &:after {
-        //   content: "";
-        //   position: absolute;
-        //   bottom: 1px;
-        //   left: -17px;
-        //   width: 0;
-        //   height: 0;
-        //   border-style: solid;
-        //   border-width: 0 17px 17px 0;
-        //   border-color: transparent #ffffff transparent transparent;
-        // }
-
       }
 
       &.lred {
@@ -390,106 +210,132 @@
       }
     }
   }
+}
 
-  .content-container {
-    margin: 0px auto;
-    padding: 40px 0px 0px 0px;
-    width: 980px;
+#faq {
+  margin: 0px auto;
+  @include background($path + 'bg-faq.png', no-repeat, top center, #d7d7d7);
+
+  .overlay {
+    background-color: rgba(204, 203, 202, 0.5);
+  }
+}
+
+#contact {
+  margin: 0px auto;
+  @include background($path + 'bg-contact.png', no-repeat, top center, #a9d36b);
+
+  .overlay {
+    background-color: rgba(148, 198, 83, 0.5);
   }
 
-  .text {
-    text-align: left;
-    font-family: PillGothic600MgRegular;
-    font-size: 18px;
-    line-height: 30px;
-
-    &.light {
-      color: #ffffff;
-    }
-
-    &.dark {
-      color: #000000;
-    }
-  }
-
-  .divider {
-    width: 980px;
-    height: 30px;
-    
-    &.light {
-      @include background($path + 'title-divider-light.png', no-repeat, top center, transparent);
-    }
-
-    &.dark {
-      @include background($path + 'title-divider-dark.png', no-repeat, top center, transparent);
-    }
-  }
-
-  .title-container {
-    text-align: left;
-  }
-
-  .title {
-    font-family: PillGothic600MgRegular;
-    font-size: 40px;
-    text-align: left;
-    color: #ffffff;
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
-
-    &.bold {
-      font-size: 50px;
-      font-weight: 600;
-    }
-  }
-
-  .sub-title {
+  .contact-form {
     width: auto;
-    font-family: GeogrotesqueRegular;
-    font-size: 25px;
+    padding:0 0 34px;
     text-align: left;
-    color: #ffffff;
-    line-height: 35px;
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
 
-    &.small {
-      margin: 23px 0px 0px 20px;
-      font-size: 20px;
+    .wrap {
+      width: 1020px;
     }
 
-    .text {
-      display: inline-block;
-      width: 70%;
-      font-size: 21px;
-      line-height: 35px;
-      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    .col {
+      float:left;
+      width:468px;
+      margin:0 42px 0 0;
     }
-  }
 
-  .screenshot {
-    margin: 50px 0px 0px 0px;
-  }
+    .row {
+      margin: 0px;
+      padding:0 0 8px;
+    }
 
-  a {
-    display: inline-block;
-    vertical-align: top;
-
-    &.btn {
-      padding: 10px 30px 7px 30px;
-      width: auto;
-      height: auto;
-      display: inline-block;
-      border: 0px;
-      @include border-radius(50px);
+    label {
       color: #ffffff;
-      font-size: 26px;
-      font-family: PillGothic600MgLight;
-      text-shadow: 0px 1px 1px rgba(0,0,0, .5);
-      line-height: 35px;
-      box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.4);
+      text-transform:uppercase;
+      font-size: 20px;
+      font-family: GeogrotesqueRegular;
+    }
 
-      &.blue {
-        @include background-gradient(#3cb4f1, #0067c2, #3cb4f1);
+    .form-text {
+      width: 468px;
+      height: 50px;
+      margin: 0 0 30px;
+    }
+
+    input[type="text"] {
+      float:left;
+      width: 442px;
+      padding: 15px 13px;
+      margin: 0px;
+      color: #000000;
+      font-family: BariolRegular;
+      font-size: 17px;
+      border: 1px solid #80a34f;
+      @include border-radius(10px);
+    }
+
+    select {
+      float:left;
+      width: 442px;
+      height: 50px;
+      padding: 5px 10px 5px 10px;
+      margin: 0px;
+      color: #000000;
+      font-family: BariolRegular;
+      font-size: 17px;
+      border: 1px solid #80a34f;
+      @include border-radius(10px);
+      outline: none;
+      -webkit-appearance: none;
+      @include background($path + 'arrow-select.png', no-repeat, 415px 20px, #ffffff);
+    }
+
+    input[type="submit"] {
+      width: 76px;
+      height: 35px;
+      margin: 0 0 0 3px;
+      padding: 0 0 1px;
+      border:0;
+      color: #fff;
+      font-family: BariolRegular;
+      font-size: 17px;
+      text-transform: uppercase;
+      @include background-gradient(#515151, #000000, #515151);
+      @include border-radius(50px);
+
+      &:hover {
+        cursor:pointer;
       }
     }
+  }
+
+  .message-field {
+    width:977px;
+    margin:0 auto 16px;
+    padding:0;
+    height:200px;
+    overflow:hidden;
+
+    textarea {
+      float:left;
+      margin:0;
+      width:949px !important;
+      height:176px !important;
+      min-height:176px !important;
+      padding:12px 14px;
+      overflow:auto;
+      color: #000000;
+      font-family: BariolRegular;
+      font-size: 17px;
+      border: 1px solid #80a34f;
+      @include border-radius(10px);
+    }
+  }
+
+  .thanks {
+    color: #ffffff;
+    font-family: PillGothic600MgMedium;
+    font-size: 20px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
   }
 }
