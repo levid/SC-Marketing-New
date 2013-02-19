@@ -36,6 +36,9 @@
         var id;
         return id = $(e.target).find('a').attr('href');
       });
+      $("input[type=text], textarea").click(function() {
+        return $(this).select();
+      });
     }
 
     SocialCrunch.prototype.scrollTo = function(id, options) {

@@ -1618,6 +1618,9 @@ ul.icons {
   .spacer.small {
     padding: 16px 0px 0px 0px; }
 
+.align-left {
+  text-align: left; }
+
 .fixed-container {
   width: 100%;
   position: fixed;
@@ -2052,6 +2055,11 @@ ul.icons {
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
         border-radius: 10px; }
+    .section #contact .thanks {
+      color: #ffffff;
+      font-family: PillGothic600MgMedium;
+      font-size: 20px;
+      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4); }
   .section .persons {
     margin: -200px 0px 0px 0px;
     padding: 0 0 1px;

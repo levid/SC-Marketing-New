@@ -520,57 +520,67 @@
         <div class='overlay'>
           <div class='content-container'>
             <div class='contact-form'>
-              <div class='wrap'>
-                <div class='col'>
-                  <div class='row'>
-                    <label for='name'>Name</label>
+              <form accept-charset='UTF-8' action='http://socialcrunch-marketing-mailer.herokuapp.com/mail' data-behavior='contact-form' method='post'>
+                <div class='wrap'>
+                  <div class='col'>
+                    <div class='row'>
+                      <label for='name'>Name</label>
+                    </div>
+                    <div class='form-text'>
+                      <input id='name' type='text' value='Undercover Cruncher' />
+                    </div>
+                    <div class='row'>
+                      <label for='number'>Phone Number</label>
+                    </div>
+                    <div class='form-text'>
+                      <input id='number' type='text' value='000-000-0000' />
+                    </div>
                   </div>
-                  <div class='form-text'>
-                    <input id='name' type='text' value='Undercover Cruncher' />
-                  </div>
-                  <div class='row'>
-                    <label for='phone'>Phone</label>
-                  </div>
-                  <div class='form-text'>
-                    <input id='phone' type='text' value='000-000-0000' />
+                  <div class='col'>
+                    <div class='row'>
+                      <label for='email'>Email</label>
+                    </div>
+                    <div class='form-text'>
+                      <input id='email' type='text' value='guess@who.com' />
+                    </div>
+                    <div class='row'>
+                      <label for='subject'>Subject</label>
+                    </div>
+                    <div class='form-text'>
+                      <select id='subject'>
+                        <option value='Hugs and Kisses'>Hugs and Kisses</option>
+                        <option value='Subject 2'>Subject 2</option>
+                        <option value='Subject 3'>Subject 3</option>
+                        <option value='Subject 4'>Subject 4</option>
+                      </select>
+                    </div>
                   </div>
                 </div>
-                <div class='col'>
-                  <div class='row'>
-                    <label for='email'>Email</label>
-                  </div>
-                  <div class='form-text'>
-                    <input id='email' type='text' value='guess@who.com' />
-                  </div>
-                  <div class='row'>
-                    <label for='subject'>Subject</label>
-                  </div>
-                  <div class='form-text'>
-                    <select id='subject'>
-                      <option value='Hugs and Kisses'>Hugs and Kisses</option>
-                      <option value='Subject 2'>Subject 2</option>
-                      <option value='Subject 3'>Subject 3</option>
-                      <option value='Subject 4'>Subject 4</option>
-                    </select>
-                  </div>
+                <div class='row'>
+                  <label for='message'>Message</label>
                 </div>
-              </div>
-              <div class='row'>
-                <label for='message'>Message</label>
-              </div>
-              <div class='message-field'>
-                <textarea cols='30' id='message' rows='10'>Hey doll, &#x000A;&#x000A;Ask questions, send thoughts, or just say hello! It's greatly appreciated.  &#x000A;We love you, but will ignore spam and abusive messages.&#x000A;&#x000A;xoxo&#x000A;SocialCrunch</textarea>
-              </div>
-              <div class='row'>
-                <input type='submit' value='Send' />
-              </div>
+                <div class='message-field'>
+                  <textarea cols='30' id='message' rows='10'>Hey doll, &#x000A;&#x000A;Ask questions, send thoughts, or just say hello! It's greatly appreciated.  &#x000A;We love you, but will ignore spam and abusive messages.&#x000A;&#x000A;xoxo&#x000A;SocialCrunch</textarea>
+                </div>
+                <div class='row'>
+                  <input type='submit' value='Send' />
+                </div>
+              </form>
             </div>
+          </div>
+          <div class='thanks hide light'>
+            <h2 class='no-padding'>
+              Thank you for contacting us!
+            </h2>
+            <br />
+            <br />
           </div>
         </div>
       </div>
     </div>
   </div>
   <script src='js/main_page.js' type='text/javascript'></script>
+  <script src='js/contact_form.js' type='text/javascript'></script>
   <!-- :javascript -->
   <!-- document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>') -->
 </body>

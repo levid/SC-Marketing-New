@@ -25,6 +25,9 @@ class SocialCrunch
       id = $(e.target).find('a').attr('href')
       # $(window.location).attr('hash', id)
 
+    $("input[type=text], textarea").click ->
+      $(this).select()
+
   scrollTo: (id, options) ->
     callback = callback or ->
     yPos = $(id).position().top - options.offset

@@ -376,46 +376,53 @@
         .overlay
           .content-container
             .contact-form
-              .wrap
-                .col
-                  .row
-                    %label{:for => "name"} Name
-                  .form-text
-                    %input#name{:type => "text", :value => "Undercover Cruncher"}/
-                  .row
-                    %label{:for => "phone"} Phone
-                  .form-text
-                    %input#phone{:type => "text", :value => "000-000-0000"}/
-                .col
-                  .row
-                    %label{:for => "email"} Email
-                  .form-text
-                    %input#email{:type => "text", :value => "guess@who.com"}/
-                  .row
-                    %label{:for => "subject"} Subject
-                  .form-text
-                    %select#subject
-                      %option{:value => "Hugs and Kisses"} Hugs and Kisses
-                      %option{:value => "Subject 2"} Subject 2
-                      %option{:value => "Subject 3"} Subject 3
-                      %option{:value => "Subject 4"} Subject 4
-              .row
-                %label{:for => "message"} Message
-              .message-field
-                %textarea#message{:cols => "30", :rows => "10"}
-                  :preserve
-                    Hey doll, 
+              %form{:"data-behavior" => 'contact-form', :"accept-charset" => "UTF-8", :action => "http://socialcrunch-marketing-mailer.herokuapp.com/mail", :method => "post"}
+                .wrap
+                  .col
+                    .row
+                      %label{:for => "name"} Name
+                    .form-text
+                      %input#name{:type => "text", :value => "Undercover Cruncher"}/
+                    .row
+                      %label{:for => "number"} Phone Number
+                    .form-text
+                      %input#number{:type => "text", :value => "000-000-0000"}/
+                  .col
+                    .row
+                      %label{:for => "email"} Email
+                    .form-text
+                      %input#email{:type => "text", :value => "guess@who.com"}/
+                    .row
+                      %label{:for => "subject"} Subject
+                    .form-text
+                      %select#subject
+                        %option{:value => "Hugs and Kisses"} Hugs and Kisses
+                        %option{:value => "Subject 2"} Subject 2
+                        %option{:value => "Subject 3"} Subject 3
+                        %option{:value => "Subject 4"} Subject 4
+                .row
+                  %label{:for => "message"} Message
+                .message-field
+                  %textarea#message{:cols => "30", :rows => "10"}
+                    :preserve
+                      Hey doll, 
 
-                    Ask questions, send thoughts, or just say hello! It's greatly appreciated.  
-                    We love you, but will ignore spam and abusive messages.
+                      Ask questions, send thoughts, or just say hello! It's greatly appreciated.  
+                      We love you, but will ignore spam and abusive messages.
 
-                    xoxo
-                    SocialCrunch  
-              .row
-                %input{:type => "submit", :value => "Send"}/
+                      xoxo
+                      SocialCrunch  
+                .row
+                  %input{:type => "submit", :value => "Send"}/
+          .thanks.hide.light
+            %h2.no-padding
+              Thank you for contacting us!
+            %br
+            %br
 
 
   %script{:src => "js/main_page.js", :type => "text/javascript"}
+  %script{:src => "js/contact_form.js", :type => "text/javascript"}
 
   / :javascript
   /   document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
